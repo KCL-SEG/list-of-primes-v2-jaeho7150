@@ -6,8 +6,8 @@ def primes(number_of_primes):
     current_num = 1
     while len(list) < number_of_primes:
 
-        if number_of_primes <= 0:
-            raise ValueError
+        if number_of_primes < 1:
+            raise ValueError("Input number should be greater than 0")
 
         if current_num > 1:
             for i in range(2,current_num):
